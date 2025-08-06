@@ -1,0 +1,32 @@
+{
+  "name": "angela-fashion-strapi",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@strapi/plugin-i18n": "4.14.0",
+    "@strapi/plugin-users-permissions": "4.14.0",
+    "@strapi/strapi": "4.14.0",
+    "better-sqlite3": "8.5.0",
+    "mysql2": "^3.6.0",
+    "strapi-plugin-io": "^1.1.4",
+    "yarn": "^1.22.19"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "13b840a7-2239-4556-8399-6f3c14ae5642"
+  },
+  "engines": {
+    "node": ">=16.0.0 <=23.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

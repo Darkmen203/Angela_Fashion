@@ -1,0 +1,12 @@
+body{
+    background: linear-gradient(180deg, #FB92A3 0%, rgba(251, 150, 166, 1.00) 0.01%, rgba(255, 255, 255, 0.86) 27.5%, #E9BCB9 81.56%);
+}
+
+.category{
+    background: rgba(255, 255, 255, 0.712);
+}
+
+.navbuttonCategory.active, .navbuttonCategory:hover{
+    background: rgba(255, 155, 172, 0.788);
+
+}

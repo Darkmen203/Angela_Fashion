@@ -1,0 +1,163 @@
+header{
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 4.22222rem;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+
+header.scrolled{
+    background-color: rgba(233, 188, 185);
+}
+
+/* Чтобы выровнить по центру наш navbar */
+header::after{
+    flex: 1;
+    content: '';
+}
+
+.header_name{
+    color: #000;
+    text-align: center;
+    font-size: 3.55556rem;
+    line-height: normal;
+    width: 10.61111rem;
+    height: 4.66667rem;
+    padding-left: 20px;
+
+    flex: 1;
+}
+
+.Menu_button{
+    display: none;
+}
+
+.Krestik{
+    display: none;
+}
+
+.navbar_header{
+    height: 4.66667rem;
+    width: 50rem;
+}
+
+.navbar_header button{
+    background: none;
+    border: none;
+    padding: 0px 15px 0px 15px;
+    height: 100%;
+}
+
+.navbar_header button a:hover{
+    /* color: rgb(255, 177, 213); */
+    font-weight: 600;
+}
+
+.navbar_header button a{
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-family: Times New Roman;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-size: 2.22222rem;
+    line-height: normal;
+}
+
+@media (max-width:1024px) {
+
+    .navbar_header button a {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width:859px) {
+
+                    /* ------------------------------------
+                            HEADER
+                   ------------------------------------- */
+    .header {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.8rem 0 0rem 0;
+    }
+
+    .Menu_button {
+        display: block;
+        position: absolute;
+        right: 2%;
+        top: 8%;
+        background: none;
+        cursor: pointer;
+
+        border: none;
+        /* width: 5rem; */
+    }
+
+    .Menu_button img {
+        width: 5.5rem;
+        height: 4rem;
+    }
+
+
+    .navbar_header {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+        height: 11.27778rem;
+        flex-shrink: 0;
+        border-radius: 0rem 0rem 1.55556rem 1.55556rem;
+        background: rgba(255, 255, 255, 0.50);
+        top: -13rem;
+        transition: top 0.3s ease-out;
+        padding-top: 1.2rem;
+    }
+
+    .navbar_header.openned {
+        top: 0;
+        transition: top 0.5s ease-out;
+    }
+
+    .navbar_header button {
+        width: auto;
+        /* padding-top: 15px; */
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .navbar_header button a:hover {
+        font-size: medium;
+    }
+
+    .navbar_header button a {
+        width: 14.77778rem;
+        height: 2rem;
+        flex-shrink: 0;
+        color: #000;
+        text-align: center;
+
+        font-size: 1.55556rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .Krestik {
+        width: auto !important;
+        height: auto !important;
+        position: absolute;
+        top: 2.5%;
+        right: 1%;
+        cursor: pointer;
+    }
+
+    .Krestik img {
+        width: 3rem;
+    }
+}

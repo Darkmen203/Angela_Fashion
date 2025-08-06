@@ -1,0 +1,276 @@
+
+
+
+
+footer{
+    border-top:#000 solid 1px;
+    margin-bottom: 0;
+    display:flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: rgba(233, 188, 185, 0.57);
+    padding-top: 6px;
+}
+
+.footer_logo{
+    
+    margin: 10px 0 0 10px;
+    background: url("/img/Ang2.svg") no-repeat;
+    width: 18rem;
+    height: 8rem;
+    border: none;
+}
+
+.footer_contact{
+    display: flex;
+    flex-direction: row;
+    font-size: 0.88rem;
+    padding-left: 20px;
+}
+
+.title_contact{
+padding-right: 19px;
+}
+
+.footer_text{
+   cursor: default;
+   display: flex;
+   margin: 0 auto;
+   align-items: flex-end;
+   padding-top: 6px;
+}
+
+.footer_logo img{
+    display: none;
+}
+
+.footer_text span{
+    padding: 0 10px;
+    padding-bottom: 6px;
+    font-size: 1rem;
+    color: #000;
+
+}
+
+.footer_text .year{
+
+    text-align: center;
+    padding-right: 2px;
+}
+
+.footer_text .Ang{
+
+    text-align: center;
+    font-size: 1rem;
+    padding-right: 0;
+}
+
+.footer_text .right{
+
+    text-align: center;
+    font-family: Inter;
+}
+
+.footer_icons {
+    display: flex;
+    column-gap: 25px;
+    padding: 30px;
+}
+
+.footer_icon{
+    display: inline-flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    outline: 2px solid #000;
+    transition-property:
+    outline-offset, outline-color, background-color;
+    transition-duration: 0.25s;
+    color: #000;
+}
+
+.footer_icon:hover{
+    outline-offset: 4px;
+}
+
+.footer_icon svg{
+    margin:auto;
+    font-size: 1.7em;
+}
+
+.footer_icon:hover svg{
+    animation: shake 0.25s;
+}
+
+.footer_contact{
+    font-family: 'Montserrat', sans-serif;
+}
+
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+
+    20%{
+        transform: rotate(-15deg);
+    }
+
+    30% {
+        transform: rotate(15deg);
+    }
+
+    40% {
+        transform: rotate(-15deg);
+    }
+}
+
+.footer_icons a:nth-child(1) .footer_icon:hover{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    animation: blink_icon1 0.25s forwards;
+}
+
+@keyframes blink_icon1 {
+    0%{
+        background: none;
+    }
+    50%{
+        outline: 4px solid #920967b1;
+
+    }
+    100%{
+        outline: 2px solid #920967b1;
+    }
+}
+.footer_icons a:nth-child(2) .footer_icon:hover{
+    background:linear-gradient(120deg, #3b5998, #FFFFFF);
+    animation: blink_icon2 0.25s forwards;
+}
+
+@keyframes blink_icon2 {
+    0%{
+        background: none;
+    }
+    50%{
+        outline: 4px solid #3b5998;
+
+    }
+    100%{
+        outline: 2px solid #3b5998;
+    }
+}
+
+.footer_icons a:nth-child(3) .footer_icon:hover{
+    background: linear-gradient(120deg, #59267c, #8f5db7, #8A83B3, #e2d4e7);
+    animation: blink_icon3 0.25s forwards;
+}
+
+@keyframes blink_icon3 {
+    0%{
+        background: none;
+    }
+    50%{
+        outline: 4px solid #8f5db7;
+
+    }
+    100%{
+        outline: 2px solid #8f5db7;
+    }
+}
+
+.footer_icons a:nth-child(4) .footer_icon:hover{
+    background: linear-gradient(45deg, #E5FFCC, #1EBEA5, #00E676, #D0E9EA);
+    animation: blink_icon4 0.25s forwards;
+}
+
+@keyframes blink_icon4 {
+    0%{
+        background: none;
+    }
+    50%{
+        outline: 4px solid #1EBEA5;
+
+    }
+    100%{
+        outline: 2px solid #1EBEA5;
+    }
+}
+
+@media (max-width:986px){
+                 /* ------------------------------------
+                        FOOTER
+                ------------------------------------- */
+
+                footer{
+                    border-top:#000 solid 1px;
+                    margin-bottom: 0;
+                    display:flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    background-color: rgba(233, 188, 185, 0.57);
+                    padding-top: 6px;
+                    flex-direction: column;
+                }
+                
+                .footer_contact{
+                    display: flex;
+                    flex-direction: row;
+                    font-size: 0.88rem;
+                    padding-left: 10px;
+                    padding-top: 17px;
+                }
+                
+                .title_contact{
+                padding-right: 19px;
+                }
+                
+                .footer_text{
+                   display: flex;
+                   margin: 0 auto;
+                   align-items: flex-end;
+                   padding-top: 6px;
+                }
+                
+                .footer_logo img{
+                    display: none;
+                }
+                
+                .footer_text span{
+                    padding: 0 10px;
+                    padding-bottom: 6px;
+                    font-size: 1rem;
+                    color: #000;
+                    font-family: 'Montserrat', sans-serif;
+                
+                }
+                
+                .footer_text .year{
+                
+                    text-align: center;
+                    padding-right: 2px;
+                }
+                
+                .footer_text .Ang{
+                
+                    text-align: center;
+                    font-size: 1rem;
+                    padding-right: 0;
+                }
+                
+                .footer_text .right{
+                
+                    text-align: center;
+                    font-family: Inter;
+                }
+            
+                .footer_icons a{
+                    text-decoration:none;
+                }
+                
+                .footer_icon{
+                    width: 40px;
+                    height: 40px;  
+                }
+                
+                /*-------------------------------------------------------------------------------------- */
+
+}

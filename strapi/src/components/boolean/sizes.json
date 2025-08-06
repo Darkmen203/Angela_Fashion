@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_boolean_sizes",
+  "info": {
+    "displayName": "SIZES",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "XS": {
+      "type": "boolean",
+      "default": false
+    },
+    "S": {
+      "type": "boolean",
+      "default": false
+    },
+    "M": {
+      "type": "boolean",
+      "default": false
+    },
+    "L": {
+      "type": "boolean",
+      "default": false
+    },
+    "XL": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

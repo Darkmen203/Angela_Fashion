@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vpn_users",
+  "info": {
+    "singularName": "vpn-user",
+    "pluralName": "vpn-users",
+    "displayName": "vpn_user",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "username": {
+      "type": "string",
+      "required": true
+    },
+    "subscription_link": {
+      "type": "text",
+      "required": true
+    },
+    "data_expire": {
+      "type": "date"
+    },
+    "password": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

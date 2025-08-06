@@ -1,0 +1,383 @@
+main{
+    width: 100vw;
+    text-align: center;
+}
+
+.main_photo{
+    width: 100vw ;
+    /* width: 53.33333rem; */
+    justify-content: center;
+    margin: 0 auto;
+    height: 100vh;
+    margin: 0 auto;
+    background: url("/img/main_image.webp") no-repeat;
+    background-size: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+.main_photo span{
+    cursor: default;
+    margin-top: 160px;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 11.6rem;
+    /* font-style: normal; */
+    /* font-weight: 400; */
+    line-height: normal;
+    letter-spacing: 1.2rem;
+    text-transform: uppercase;
+}
+
+.sub_brand{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+    cursor: default;
+    position: absolute;
+    height: 80px;
+    top: 62vh;
+    left: 56vw;
+    color: #FFF9F9;
+    text-align: center;
+    font-size: 3.55556rem;
+
+    line-height: normal;
+    letter-spacing: 0.35556rem;
+    text-transform: uppercase;
+}
+
+.arrow-down {
+    margin: 30px;
+}
+.arrow-down span {
+    display:block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 67%;
+    left: 50%;
+    border-bottom: 5px solid #ffffff;
+    border-right: 5px solid #ffffff;
+    transform: rotate(45deg);
+    animation: arrow-down 2s infinite;
+}
+.arrow-down span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow-down span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes arrow-down {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+
+.swiper{
+    margin-top: 100px;
+    /* height: 52.6rem; */
+    height: 46.6rem;
+    width: 60%;
+    border-radius: 45px;
+}
+.swiper-wrapper{
+    pointer-events: none;
+}
+#slide_1  {
+    background: url('/img/in_slider_1.webp') no-repeat center;
+};
+#slide_2 {
+    background: url('/img/in_slider_2.webp') no-repeat center;
+};
+#slide_3 {
+    background: url('/img/in_slider_3.webp') no-repeat center;
+};
+#slide_4 {
+    background: url('/img/IMG_8451.MOV');
+};
+
+.swiper-slide{
+    /* width: 53.33333rem;   */
+    /* height: 66.11111rem; */
+    flex-shrink: 0;
+    margin: 0 auto;
+    width: 60%; 
+}
+
+.slide_slider{
+    /* width: 100%; */
+    height: 100%;
+    background-size: 100% !important;
+    /* width: 53.33333rem;
+    height: 66.11111rem;
+    flex-shrink: 0;
+    margin: 0 auto; */
+    border-radius: 20px;
+}
+
+.slide_slider img{
+    display: none;
+    object-fit: contain;
+}
+
+.bgvideo{
+    pointer-events: none;
+    object-fit: cover;
+    /* Make video to at least 100% wide and tall */
+    min-width: 100%; 
+    /* max-width: 80%;  */
+    min-height: 90%; 
+    max-height: 100%; 
+    border-radius: 20px;
+}
+
+/* .swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: 2rem !important;
+    left: auto;
+} */
+
+
+.gift_card{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 5rem;
+}
+
+.gift_card .gift_cards_item{
+    background: url("/gift_card/Karta (2).png") no-repeat;
+    height: 220px;
+    width: 353px;
+    border-radius: 30px;
+    background-size: 100% 100% !important;
+    /* transition: width 2s; */
+    transition: width 0.5s, height 0.5s;
+}
+.gift_card .gift_cards_item.visible{
+    
+    transition: width 0.5s, height 0.5s;
+    /* transition: width 0.5s; */
+    height: calc(220px + 2rem);
+    width: calc(353px + 2rem);
+}
+
+.gift_card .gift_cards_item img{
+    display: none;
+    object-fit: contain;
+}
+.about_shop{
+    margin: 100px 74px;
+    margin-bottom: 85px;
+    display: inline-flex;
+    border-radius: 1.66667rem;
+    /* border: 1px solid; */
+    background: #ffd5db;
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.129) inset;
+    padding: 12px 0 12px 0;
+    /* width: 77.26rem; */
+}
+
+#photo_shop{
+    width: 28.16667rem;
+    height: 29.44444rem;
+    flex-shrink: 0;
+
+    border-radius: 1.5rem;
+    background: url("/img/Rectangle 2.png") no-repeat;
+    background-size: cover;
+    position: relative;
+    left: -1.1rem;
+    border-radius: 1.5rem;
+    box-shadow: 26px 4px 39px 0px #ff8ea18c;
+}
+
+#photo_shop img{
+    display: none;
+}
+
+.text_about{
+    margin: 16.5px 35px;
+    margin-left: 90px;
+}
+
+.about_shop .text_about p{
+    cursor: default;
+    color: #000;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    line-height: normal;
+    margin-bottom: 1.1em;
+}
+
+.text_about .yandex_maps{
+    border-radius: 27px;
+    height: 360px; 
+}
+.text_about iframe{
+    border-radius: 27px;
+}
+
+
+
+@media (max-width:640px){
+    html,body{ 
+        font-size: 12px;
+    }
+
+    .main_photo{
+        width: 100vw;
+        background: url("/img/main_image.webp") no-repeat;
+        background-position: 43% 0;
+        background-size:cover;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main_photo span{
+
+        margin-top: 6rem;
+        font-size: 5rem;
+    }
+    
+    .sub_brand{
+        top: 52vh;
+        left: 50vw;
+        font-size: 2.3rem;
+    }
+
+    .main_photo span {
+        top: 76%;
+    }
+
+    .swiper{
+        margin-top: 75px;
+        height: 39rem; 
+    }
+
+    .gift_card{
+        margin-top: 100px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 5rem;
+    }
+    
+    .gift_card .gift_cards_item{
+        height: 171px;
+        width: 268px;
+        border-radius: 30px;
+    }
+
+    .gift_card .gift_cards_item.visible{
+    
+        transition: width 0.5s, height 0.5s;
+        /* transition: width 0.5s; */
+        height: calc(212.5px + 20px);
+        width: calc(340px + 5%);
+    }
+
+    .about_shop{
+        display: flex;
+        flex-direction: column;
+        margin: 65px 5px 30px 5px;
+        justify-content: center;
+        align-items: center;
+        border: none;
+    }
+
+    #photo_shop{
+        width: 28.16667rem;
+        height: 29.44444rem;
+        border-radius: 1.5rem;
+        background: url("/img/Rectangle 2.png") no-repeat;
+        background-size: cover;
+        position:static;
+        left: 0rem;
+
+        /* margin-left: auto; */
+    }
+    
+    #photo_shop img{
+        display: none;
+    }
+    .text_about .yandex_maps{
+        height: auto; 
+    }
+    .MapYandex{
+        width: 90vw;
+        margin: 20px auto 0 auto;
+    }
+
+    .text_about{
+        margin: 25px auto 0 auto;
+    }
+
+    
+}
+
+
+@media (max-width:1024px){
+    .about_shop {
+        margin: 100px 24px;
+    }
+
+    #photo_shop{
+        margin-top: auto;
+        margin-bottom: auto;    
+        border-radius: 1.5rem;
+        background: url("/img/Rectangle 2.png") no-repeat;
+        background-size: cover;
+        position: relative;
+        
+        left: -1.1rem;
+        border-radius: 1.5rem;
+        box-shadow: 26px 4px 39px 0px #ff8ea18c;
+    }
+
+    .text_about {
+        margin: 16.5px 27px;
+        margin-left: 27px;
+    }
+    .swiper {
+        height: 59rem;
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 900px) {   
+    .swiper{
+        margin-top: 100px;
+        height: 38rem;
+        width: 100%;
+    } 
+}
+
+@media (max-width: 900px) {   
+    .swiper{
+        margin-top: 100px;
+        /* height: 38rem; */
+        width: 100%;
+    } 
+}
+
+@media (max-width: 370px) {   
+    .swiper{
+        height: 33rem;
+    } 
+}

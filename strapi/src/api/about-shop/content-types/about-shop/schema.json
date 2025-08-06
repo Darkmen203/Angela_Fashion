@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_shops",
+  "info": {
+    "singularName": "about-shop",
+    "pluralName": "about-shops",
+    "displayName": "About Shop"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "richtext"
+    }
+  }
+}
